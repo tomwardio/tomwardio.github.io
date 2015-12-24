@@ -1,0 +1,43 @@
+#global module:false
+
+"use strict"
+
+module.exports = (grunt) ->
+    grunt.loadNpmTasks "grunt-contrib-copy"
+
+    grunt.initConfig
+
+        copy:
+            jquery:
+                files: [{
+                    expand: true
+                    cwd: "_vendor/jquery/dist/"
+                    src: "jquery*.js"
+                    dest: "js/jquery"
+                }]
+            bootstrap:
+                files: [{
+                    expand: true
+                    cwd: "_vendor/bootstrap/dist/css/"
+                    src: "*.css"
+                    dest: "css/bootstrap"
+                },
+                {
+                    expand: true
+                    cwd: "_vendor/bootstrap/dist/js/"
+                    src: "bootstrap*.js"
+                    dest: "js/bootstrap"
+                },
+                {
+                    expand: true
+                    cwd: "_vendor/bootstrap/dist/fonts/"
+                    src: "*"
+                    dest: "fonts/bootstrap"
+                }]
+
+
+
+
+    grunt.registerTask "default", [
+        "copy"
+    ]
