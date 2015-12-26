@@ -14,12 +14,18 @@ module.exports = (grunt) ->
                     cwd: "_vendor/jquery/dist/"
                     src: "jquery*.js"
                     dest: "js/jquery"
+                },
+                {
+                    expand: true
+                    cwd: "_vendor/jquery/dist/"
+                    src: "jquery.min.map"
+                    dest: "js/jquery"
                 }]
             bootstrap:
                 files: [{
                     expand: true
                     cwd: "_vendor/bootstrap/dist/css/"
-                    src: "*.css"
+                    src: "*.css*"
                     dest: "css/bootstrap"
                 },
                 {
