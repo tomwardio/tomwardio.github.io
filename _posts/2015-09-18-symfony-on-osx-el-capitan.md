@@ -25,7 +25,7 @@ sudo apachectl start
 
 This should be enough to get your local webserver up and running! To check it works, open up your fave web browser and go to "http://127.0.0.1". Hopefully you should see something like this:
 
-![apache_itworks](http://tomjbward.co.uk/wp-content/uploads/2015/09/apache_itworks-300x188.png)
+[![](/uploads/posts/symfony-on-osx-el-capitan/apache_itworks-300x188.png "apache_itworks")](/uploads/posts/symfony-on-osx-el-capitan/apache_itworks.png)
 
 # Step 2: Enable PHP, alias and rewrite Apache modules
 

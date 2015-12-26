@@ -11,9 +11,8 @@ name: Tom Ward
 email: contactme@tomjbward.co.uk
 header-img: img/default-bg.jpg
 description: >
-  A technical blog by Tom Ward. Nothing more than a sparse collection of semi-
-  interesting things for equally geeky folk.
-baseurl: "" # the subpath of your site, e.g. /blog
+  A technical blog with nothing more than a sparse collection of semi-
+  interesting things for geeky folk.
 url: "http://www.tomjbward.co.uk" # the base hostname & protocol for your site
 twitter_username: wardio
 github_username:  tomwardio

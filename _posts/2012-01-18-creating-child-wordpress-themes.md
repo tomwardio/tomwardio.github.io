@@ -109,4 +109,4 @@ And then this into the CSS:
 ```
 
 It's not perfect, but you get the idea.
-And that's about it. There's plenty more you can do with child templates, but this was enough to get something I was happy with. If you want to see what I ended up with, I've uploaded the theme I created [here]( http://www.tomjbward.co.uk/wp-content/uploads/2012/01/tomward.zip)
+And that's about it. There's plenty more you can do with child templates, but this was enough to get something I was happy with. If you want to see what I ended up with, I've uploaded the theme I created [here](/uploads/posts/creating-child-wordpress-themes/tomward.zip)

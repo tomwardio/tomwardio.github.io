@@ -33,7 +33,7 @@ To do this, goto cydia, click manage and add the following depot to your list of
 [http://cydia.hackulo.us](http://cydia.hackulo.us)  
 Cydia might show a popup saying that this repository has been marked for illegal activity, which you can ignore (this is because Appsync allows you to install **any** unsigned app, which could be used to install things illegally. It should go without saying not to do that, this guide is only for running your own code, not someone else's illegally!)
 
-[![](http://www.tomjbward.co.uk/wp-content/uploads/2012/01/IMG_0384-200x300.png "CydiaSources")](http://www.tomjbward.co.uk/wp-content/uploads/2012/01/IMG_0384.png)
+[![](/uploads/posts/jailbroken-ios-development-with-xcode4-2/CydiaSources-200x300.png "CydiaSources")](/uploads/posts/jailbroken-ios-development-with-xcode4-2/CydiaSources.png)
 
 Once you have the repository source added, search and install AppSync for iOS5.
 
@@ -41,7 +41,7 @@ Once you have the repository source added, search and install AppSync for iOS5.
 
 Now you've setup your iDevice, the next stage is to make it so that you can disable XCode from trying to sign your app with its provisioning profile. The easiest way to do this is to simply run XcodeHack.app, which you can get from [http://xsellize.com/topic/132661-releasexcodehack-v101/](http://xsellize.com/topic/132661-releasexcodehack-v101/) Simply run this exe and click the "PATCH". Done!
 
-[![](http://www.tomjbward.co.uk/wp-content/uploads/2012/01/XCodeHack-300x139.png "XCodeHack")](http://www.tomjbward.co.uk/wp-content/uploads/2012/01/XCodeHack.png)
+[![](/uploads/posts/jailbroken-ios-development-with-xcode4-2/XCodeHack-300x139.png "XCodeHack")](/uploads/posts/jailbroken-ios-development-with-xcode4-2/XCodeHack.png)
 
 # Step 4: Setup a Post-Build fake signing step to your project
 
@@ -51,7 +51,7 @@ The final step is make a few changes to your XCode iOS project in order to stop 
 
 Click On the project (making sure your targetting iOS Device and not a simulator) and then under "Code Signing" change the Code Signing Identity to "Don't Sign Code"
 
-[![](http://www.tomjbward.co.uk/wp-content/uploads/2012/01/Screen-Shot-2012-01-18-at-21.57.46.png "Codesigning")](http://www.tomjbward.co.uk/wp-content/uploads/2012/01/codesigning.png)
+[![](/uploads/posts/jailbroken-ios-development-with-xcode4-2/Codesigning.png "Codesigning")](/uploads/posts/jailbroken-ios-development-with-xcode4-2/Codesigning.png)
 
 ## Step 4.2: Create a self-signed certificate
 
@@ -59,12 +59,12 @@ You now need to create your own self-signing certificate to fake sign with. To d
 
 ## Step 4.3: Download the following script
 
-Next, download [this](http://www.tomjbward.co.uk/uploads/FakeCodeSign/gen_entitlements.py) little script that will make code signing nice and simple. Put it wherever you like, I put it in a /Developer/FakeCodeSign folder. Make sure you make it executable. Or run these commands from Terminal:
+Next, download [this](/uploads/posts/jailbroken-ios-development-with-xcode4-2/gen_entitlements.py) little script that will make code signing nice and simple. Put it wherever you like, I put it in a /Developer/FakeCodeSign folder. Make sure you make it executable. Or run these commands from Terminal:
 
 ```bash
 mkdir /Deveoper/FakeCodeSign  
 cd /Developer/FakeCodeSign  
-wget http://www.tomjbward.co.uk/uploads/FakeCodeSign/gen_entitlements.py  
+curl -O http://www.tomjbward.co.uk/uploads//uploads/posts/jailbroken-ios-development-with-xcode4-2/gen_entitlements.py
 chmod 755 gen_entitlements.py  
 ```
 
@@ -74,7 +74,7 @@ Finally we need to add a post-build step to run this script before we deploy and
 
 Click on your project, then click your app in the Targets list and goto "Build Phases". Next press the "Add Build Phase" in the bottom right-hand corner and select "Add Run Script"
 
-[![](http://www.tomjbward.co.uk/wp-content/uploads/2012/01/AddRunScriptBuildPhase-e1326923661782.png "AddRunScriptBuildPhase")](http://www.tomjbward.co.uk/wp-content/uploads/2012/01/AddRunScriptBuildPhase-e1326923661782.png)
+[![](/uploads/posts/jailbroken-ios-development-with-xcode4-2/AddRunScriptBuildPhase-small.png "AddRunScriptBuildPhase")](/uploads/posts/jailbroken-ios-development-with-xcode4-2/AddRunScriptBuildPhase.png)
 
 Now expand the Run Script box and enter the following (replace "iPhone Developer" with whatever you called your certificate)
 
@@ -86,7 +86,7 @@ codesign -f -s "iPhone Developer" --entitlements "${BUILT_PRODUCTS_DIR}/${WRAPPE
 fi
 ```
 
-[![](http://www.tomjbward.co.uk/wp-content/uploads/2012/01/RunScriptDropdown.png "RunScriptDropdown")](http://www.tomjbward.co.uk/wp-content/uploads/2012/01/RunScriptDropdown.png)
+[![](/uploads/posts/jailbroken-ios-development-with-xcode4-2/RunScriptDropdown.png "RunScriptDropdown")](/uploads/posts/jailbroken-ios-development-with-xcode4-2/RunScriptDropdown.png)
 
 And that's it! You should now be able to deploy, run and even debug your project without having to pay Apple for the priviledge!
 
