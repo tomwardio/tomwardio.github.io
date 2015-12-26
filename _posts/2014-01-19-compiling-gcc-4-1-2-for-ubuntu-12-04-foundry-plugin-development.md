@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Compiling GCC 4.1.2 for Ubuntu 12.04 (Foundry plugin development)
+permalink: compiling-gcc-4-1-2-for-ubuntu-12-04-foundry-plugin-development
 categories:
 - Tech
 tags:

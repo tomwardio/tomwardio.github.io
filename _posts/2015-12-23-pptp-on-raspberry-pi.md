@@ -1,6 +1,8 @@
 ---
 layout: post
 title: PPTP on Raspberry Pi
+subtitle: How to add PPTP daemon to a Raspberry Pi.
+permalink: pptp-on-raspberry-pi
 categories:
 - Tech
 tags:

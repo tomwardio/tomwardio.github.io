@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Disable Ubuntu ALT key moving windows - the easy way!
+permalink: disable-ubuntu-alt-key-moving-windows-the-easy-way
 categories:
 - Tech
 tags:
@@ -9,7 +10,6 @@ tags:
 - modo
 - ubuntu
 - alt key
-comments: []
 ---
 Because I've had to install Ubuntu a lot recently, and I always forget how to do this.
 

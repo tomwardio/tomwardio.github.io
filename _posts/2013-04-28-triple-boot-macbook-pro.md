@@ -1,13 +1,8 @@
 ---
 layout: post
 title: Triple-boot Macbook Pro
-author:
-  display_name: tomward
-  login: tomward
-  email: tomwardio@gmail.com
-  url: ''
-author_login: tomward
-author_email: tomwardio@gmail.com
+subtitle: Installing OSX, Windows 7 and Redhat.
+permalink: triple-boot-macbook-pro
 categories:
 - Tech
 tags:

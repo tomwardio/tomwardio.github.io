@@ -1,8 +1,8 @@
 ---
 layout: post
-status: publish
-published: true
 title: Class Layout Reporting with VC++ Compiler
+subtitle: Tutorial to show class layout on Windows using VC++.
+permalink: class-layout-reporting-with-vc-compiler
 categories:
 - Tech
 tags:
@@ -10,7 +10,6 @@ tags:
 - c++
 - class layout
 - vs2010
-comments: []
 ---
 Last month whilst searching for a VC++ compiler flag (the -Isystem equivalent for VS, which I never did find) I stumbled across this hidden flag, which allows you to print out what the compiler generates for your class structure. Very cool!
 

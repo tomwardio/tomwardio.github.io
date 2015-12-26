@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Reading the Keyboard in X11
+permalink: reading-keyboard-in-x11
 categories:
 - Tech
 tags:

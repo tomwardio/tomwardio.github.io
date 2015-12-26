@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Encrypt Files using Terminal
+subtitle: How-to encrypt files using built in OSX tools.
+permalink: encrypt-files-using-terminal
 categories:
 - Tech
 tags:

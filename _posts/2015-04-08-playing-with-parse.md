@@ -1,19 +1,7 @@
 ---
 layout: post
-status: publish
-published: true
 title: Playing with Parse
-author:
-  display_name: tomward
-  login: tomward
-  email: tomwardio@gmail.com
-  url: ''
-author_login: tomward
-author_email: tomwardio@gmail.com
-wordpress_id: 301
-wordpress_url: http://tomjbward.co.uk/?p=301
-date: '2015-04-08 21:00:21 +0100'
-date_gmt: '2015-04-08 21:00:21 +0100'
+permalink: playing-with-parse
 categories:
 - Tech
 tags:
@@ -21,7 +9,6 @@ tags:
 - ios
 - nosql
 - web
-comments: []
 ---
 Recently I've started delving into the world of writing iOS apps, mainly because it's just so much faster to develop than in C/C++. I decided to create a little exercise app to give it some context called "FriendTracker". The premise was that it would keep a history of your location, but also allow you to see where your friends have been as well.
 

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: SIMD optimized dot and cross product functions
+subtitle: C++ examples of vector intrinsics.
+permalink: simd-optimized-dot-and-cross
 categories:
 - Tech
 tags:
@@ -11,7 +13,6 @@ tags:
 - simd
 - intrinsics
 - c++
-comments:
 ---
 
 In my limited spare time, I've been trying to teach myself some basic [SIMD programming](http://en.wikipedia.org/wiki/SIMD) in order to optimize my 3D math library I've been work on. Whilst at EA, we had the idea of having an "FPU" (Floating-point Processing Unit) math library, alongside a "VPU" (vector processing unit) optimized class. I decided to do the same thing in my math library for a few reasons:

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: p4dctl on Raspberry Pi
+subtitle: Adding control daemon for controlling perforce server.
+permalink: p4dctl-on-raspberry-pi
 categories:
 - Tech
 tags:

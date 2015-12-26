@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Incremental Linking and Embedding Manifests
+permalink: incremental-linking-and-embedding-manifests
 categories:
 - Tech
 tags:

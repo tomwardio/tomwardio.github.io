@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Jailbroken iOS development with XCode4.2 and iOS5
+subtitle: Guide to show how to jailbreak iOS device for development.
+permalink: jailbroken-ios-development-with-xcode4-2
 categories:
 - Tech
 tags:
@@ -30,7 +32,7 @@ Now you've jailbroken your iDevice, you need to install a bit of software called
 To do this, goto cydia, click manage and add the following depot to your list of depots:  
 [http://cydia.hackulo.us](http://cydia.hackulo.us)  
 Cydia might show a popup saying that this repository has been marked for illegal activity, which you can ignore (this is because Appsync allows you to install **any** unsigned app, which could be used to install things illegally. It should go without saying not to do that, this guide is only for running your own code, not someone else's illegally!)
-  
+
 [![](http://www.tomjbward.co.uk/wp-content/uploads/2012/01/IMG_0384-200x300.png "CydiaSources")](http://www.tomjbward.co.uk/wp-content/uploads/2012/01/IMG_0384.png)
 
 Once you have the repository source added, search and install AppSync for iOS5.

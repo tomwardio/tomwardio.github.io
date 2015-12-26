@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Setting up MongoDB as service on OSX
+permalink: setting-up-mongodb-as-service-on-osx
 categories:
 - Tech
 tags:
