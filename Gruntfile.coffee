@@ -4,9 +4,14 @@
 
 module.exports = (grunt) ->
     grunt.loadNpmTasks "grunt-contrib-copy"
+    grunt.loadNpmTasks "grunt-contrib-cssmin"
 
     grunt.initConfig
 
+        cssmin:
+            build:
+                files:
+                    'css/clean-blog.min.css': ['css/clean-blog.css']
         copy:
             jquery:
                 files: [{
@@ -41,9 +46,6 @@ module.exports = (grunt) ->
                     dest: "fonts/bootstrap"
                 }]
 
-
-
-
     grunt.registerTask "default", [
-        "copy"
+        "copy", "cssmin"
     ]
