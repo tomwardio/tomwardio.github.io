@@ -53,7 +53,7 @@ sudo apachectl restart
 
 # Step 3: Create a Symfony application
 
-Create yourself a new symfony application, following the instructions http://symfony.com/doc/current/book/installation.html. I used the symfony installer, so the following commands in Terminal should get you a new symfony app setup:
+Create yourself a new symfony application, following the instructions [here](http://symfony.com/doc/current/book/installation.html). I used the symfony installer, so the following commands in Terminal should get you a new symfony app setup:
 
 ```bash
 sudo curl -LsS http://symfony.com/installer -o /usr/local/bin/symfony

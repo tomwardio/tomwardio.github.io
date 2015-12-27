@@ -16,9 +16,9 @@ Recently in my spare time I've been dabbling on Apple's not-so-new OpenGL repla
 
 For all its bells and whistles, there was one thing that I found really annoying. It's quite a common thing to want to use a texture for applying various effects in OpenGL, using the R, G, B and A values the image's pixels to store arbitrary data in. A good example is when doing bump mapping, where you might want to store the bump amount in the diffuse texture's alpha.
 
-However, on iOS it doesn't seem to be possible to do this. The problem is that when you load a PNG image on iOS, by default it seems to automatically pre-multiply the image by the alpha channel. This means that when you load the UIImage, iOS automatically multiplies the R, G and B by the pixel's alpha amount, which means you lose the color values for anywhere there's a zero alpha. I might be doing something wrong, so I've uploaded an example iOS project that should show the issue ([https://github.com/tomwardio/MetalPremultTexture](https://github.com/tomwardio/MetalPremultTexture)):
+However, on iOS it doesn't seem to be possible to do this. The problem is that when you load a PNG image on iOS, by default it seems to automatically pre-multiply the image by the alpha channel. This means that when you load the UIImage, iOS automatically multiplies the R, G and B by the pixel's alpha amount, which means you lose the color values for anywhere there's a zero alpha. I might be doing something wrong, so I've uploaded an example iOS project that should show the issue [here](https://github.com/tomwardio/MetalPremultTexture):
 
-# Loading the UIImage using CGContextDrawImage
+# Loading the UIImage
 
 For this example, I've created my own 8-bit PNG that has the following:
 
