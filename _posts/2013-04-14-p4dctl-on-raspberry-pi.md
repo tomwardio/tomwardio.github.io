@@ -3,6 +3,7 @@ layout: post
 title: p4dctl on Raspberry Pi
 subtitle: Adding control daemon for controlling perforce server.
 permalink: p4dctl-on-raspberry-pi
+header-img: uploads/posts/p4dctl-on-raspberry-pi/background.jpg
 categories:
 - Tech
 tags:
@@ -14,7 +15,7 @@ tags:
 - debian
 - scm
 ---
-So with perforce running on my Raspberry Pi, I now wanted to setup a service to deal with starting, stopping and backing up my perforce server. Although I could've just created an init.d script myself, I decided to use the open source [p4dctl](http://public.perforce.com/wiki/P4dctl "p4dctl") to do most of the work. The problem was that this wasn't compiled for ARM, especially not for a hard-float ARM distro that I'm using. Here I explain how I got it built, but if you're lazy like me I've also uploaded a copy [here](http://www.tomjbward.co.uk/wp-content/uploads/2013/04/p4dctl.zip) that you can unzip and copy to your device.
+So with perforce running on my Raspberry Pi, I now wanted to setup a service to deal with starting, stopping and backing up my perforce server. Although I could've just created an init.d script myself, I decided to use the open source [p4dctl](http://public.perforce.com/wiki/P4dctl "p4dctl") to do most of the work. The problem was that this wasn't compiled for ARM, especially not for a hard-float ARM distro that I'm using. Here I explain how I got it built, but if you're lazy like me I've also uploaded a copy [here](/uploads/posts/p4dctl-on-raspberry-pi/p4dctl.zip) that you can unzip and copy to your device.
 
 # Getting setup to build p4dctl
 

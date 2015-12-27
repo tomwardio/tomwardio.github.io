@@ -22,9 +22,8 @@ However, on iOS it doesn't seem to be possible to do this. The problem is that
 
 For this example, I've created my own 8-bit PNG that has the following:
 
-![RGB](http://tomjbward.co.uk/wp-content/uploads/2015/07/texture.png) | ![Alpha](http://tomjbward.co.uk/wp-content/uploads/2015/07/alpha-300x300.png)
+[![RGB](/uploads/posts/un-premultiplied-textures-on-metal/texture-small.png)](/uploads/posts/un-premultiplied-textures-on-metal/texture.png) | [![Alpha](/uploads/posts/un-premultiplied-textures-on-metal/alpha-small.png)](/uploads/posts/un-premultiplied-textures-on-metal/alpha.png)
 ------------- | -------------
-RGB           | Alpha
 
 To load a UIImage into a Metal texture, the only way to currently do this is to use the CGImage API to get access to the raw pixel data. I wrote a helper function for doing just this:
 
@@ -75,7 +74,7 @@ To load a UIImage into a Metal texture, the only way to currently do this is to
 
 This loads the texture into memory using the image settings. The problem is that rather than creating the RGB values like they are above, I instead get the following when rendering it in Metal:
 
-![Rendered texture](http://tomjbward.co.uk/wp-content/uploads/2015/07/result-300x300.png)
+[![Rendered texture](/uploads/posts/un-premultiplied-textures-on-metal/result-small.png)](/uploads/posts/un-premultiplied-textures-on-metal/result.png)
 
 As you can see, the image has been pre-multiplied with the alpha, which is kinda to be expected, because we used the image's CGAlphaInfo to determine how to read the pixel into memory. In the header, there's a promising option called _"kCGImageAlphaLast"_, which looks to be exactly what we want! However, using this causes the image to fail to load with the following error:
 
@@ -89,7 +88,7 @@ Another option (though this won't work in most cases) is to try and un-premult t
 
 In the example above, here's what you get when you un-premult the texture:
 
-![RGB / A](http://tomjbward.co.uk/wp-content/uploads/2015/07/unpremult-300x300.png)
+[![RGB / A](/uploads/posts/un-premultiplied-textures-on-metal/unpremult-small.png)](/uploads/posts/un-premultiplied-textures-on-metal/unpremult.png)
 
 As you can see, the areas which had a zero alpha have been lost, and another thing to watch out for is banding issues, where the 8-bit component size has lost precision, so when you divide you end up with some no so exact results (as you can see by the strange fringing).
 

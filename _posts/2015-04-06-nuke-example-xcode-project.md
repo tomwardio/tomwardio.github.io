@@ -17,7 +17,7 @@ My reasoning for doing this was two fold. Firstly, Nuke's SDK currently ships wi
 
 For those who don't want to create it from scratch, [I've put the finished XCode project up on github](https://github.com/tomwardio/NukeOSX-ExamplePlugin "NukeOSX-Example-Plugin"), feel free to clone and modify to your hearts content! The "ExamplePlugin" does a very simple greyscale filter on the RGB channels and maintains the alpha. It's not all that efficient, but is a simple plugin.
 
-[![ExamplePlugin](http://tomjbward.co.uk/wp-content/uploads/2015/04/Screen-Shot-2015-04-05-at-23.02.46-1024x631.png)](http://tomjbward.co.uk/wp-content/uploads/2015/04/Screen-Shot-2015-04-05-at-23.02.46.png)
+[![ExamplePlugin](/uploads/posts/nuke-example-xcode-project/ExamplePlugin-small.png)](/uploads/posts/nuke-example-xcode-project/ExamplePlugin.png)
 
 For those who want to do it from scratch, here's a list of common gotchas that you want to watch out for.
 
@@ -29,12 +29,12 @@ When creating the project, make sure you select "Bundle" under "Framework & Libr
 
 There are various build settings you'll need to change to get it to compile correctly and then not crash! Here's the one's you should change:
 
-_**CLANG_CXX_LIBRARY=libstdc++**_ - By default it's "libc++", but as NUKE is compiled with libstdc++, you'll need to match this, otherwise you'll get some strange compiler errors about std symbols
-_**VALID_ARCHS=x86_64**_ - Pretty obvious, NUKE is 64-bit only
-_**OTHER_LDFLAGS=-lGLEW -lDDImage**_ - You'll need to link against DDImage and GLEW to compile your app
-_**HEADER_SEARCH_PATHS=/Application/Nuke<version>/Nuke<version>.app/Contents/MacOS</version></version>**_ - Setup your header search paths to whatever version of Nuke you're targetting
-_**LIBRARY_SEARCH_PATHS=/Application/Nuke<version>/Nuke<version>.app/Contents/MacOS</version></version>**_ - Again, set the linker path up to find the DDImage libarary
-_**MACOSX_DEPLOYMENT_TARGET=10.6**_ - As NUKE still supports 10.6, you should make sure you build your plugin with 10.6 support. Changing the deployment target means you can still use whatever SDK you have installed, but that it doesn't allow you to use more modern SDK calls, which is useful.
+* _**CLANG_CXX_LIBRARY=libstdc++**_ - By default it's "libc++", but as NUKE is compiled with libstdc++, you'll need to match this, otherwise you'll get some strange compiler errors about std symbols
+* _**VALID_ARCHS=x86_64**_ - Pretty obvious, NUKE is 64-bit only
+* _**OTHER_LDFLAGS=-lGLEW -lDDImage**_ - You'll need to link against DDImage and GLEW to compile your app
+* _**HEADER_SEARCH_PATHS=/Application/Nuke<version>/Nuke<version>.app/Contents/MacOS</version></version>**_ - Setup your header search paths to whatever version of Nuke you're targetting
+* _**LIBRARY_SEARCH_PATHS=/Application/Nuke<version>/Nuke<version>.app/Contents/MacOS</version></version>**_ - Again, set the linker path up to find the DDImage libarary
+* _**MACOSX_DEPLOYMENT_TARGET=10.6**_ - As NUKE still supports 10.6, you should make sure you build your plugin with 10.6 support. Changing the deployment target means you can still use whatever SDK you have installed, but that it doesn't allow you to use more modern SDK calls, which is useful.
 
 # Add a User-defined setting for the Nuke Application folder
 

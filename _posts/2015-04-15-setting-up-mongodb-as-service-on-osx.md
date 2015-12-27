@@ -186,7 +186,7 @@ sudo launchctl load /System/Library/LaunchDaemons/org.mongodb.mongod.plist
 
 And that's it! If you now browse to http://localhost:28017/, you should see a debug page for the local mongoDB!
 
-[![MongoDB_running](http://tomjbward.co.uk/wp-content/uploads/2015/04/MongoDB_running-1024x629.png)](http://tomjbward.co.uk/wp-content/uploads/2015/04/MongoDB_running.png)
+[![MongoDB_running](/uploads/posts/setting-up-mongodb-as-service-on-osx/MongoDB_running-small.png)](/uploads/posts/setting-up-mongodb-as-service-on-osx/MongoDB_running.png)
 
 # Launchd Troubleshooting
 

@@ -55,6 +55,6 @@ You basically just have to call "::testing::InitGoogleTest(&argc, argv)", then u
 
 Here's the output from my test framework (I've now written over 300 tests!). I really like the formatted output, and it also does some basic timings as well (though not enough for performance testing)
 
-[![UnitTests](http://tomjbward.co.uk/wp-content/uploads/2014/01/UnitTests-300x278.jpg)](http://tomjbward.co.uk/wp-content/uploads/2014/01/UnitTests.jpg)
+[![UnitTests](/uploads/posts/unit-testing-using-googletest/UnitTests-small.jpg)](/uploads/posts/unit-testing-using-googletest/UnitTests.jpg)
 
 For anyone looking to do some C++ unit testing, I'd highly recommend this as your solution!
