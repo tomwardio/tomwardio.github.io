@@ -24,4 +24,4 @@ redcarpet:
 permalink: pretty
 paginate: 10
 gems: [jekyll-paginate]
-exclude: ["node_modules", "CNAME", "Gruntfile.coffee", "package.json"]
+exclude: ["node_modules", "CNAME", "Gruntfile.coffee", "package.json", "README.md"]
