@@ -117,7 +117,7 @@ sudo dscl . create /Users/_mongodb Password "*"
 Finally we'll want to change the ownership of the dbpath we setup earlier to be owned by this user. Doing the following should do this for you:
 
 ```bash
-sudo chown -R /data/db _mongodb:_mongodb
+sudo chown -R _mongodb:_mongodb /data/db
 ```
 
 # Creating the System Service
@@ -132,11 +132,14 @@ sudo open -a TextEdit /System/Library/LaunchDaemons/org.mongodb.mongod.plist
 This will open the file in TextEdit, though you can use whatever editor you like. Next, add the following:
 
 ```
-<plist version="1.0"><dict>
+<plist version="1.0">
+<dict>
 <key>GroupName</key>
 <string>_mongodb</string>
-<key>InitGroups</key><true><key>KeepAlive</key>
-<false>
+<key>InitGroups</key>
+<true/>
+<key>KeepAlive</key>
+<false/>
 <key>Label</key>
 <string>org.mongodb.mongod</string>
 <key>ProgramArguments</key>
@@ -145,9 +148,11 @@ This will open the file in TextEdit, though you can use whatever editor you like
 <string>--config</string>
 <string>/etc/mongodb.conf</string>
 </array>
-<key>RunAtLoad</key><true><key>UserName</key>
+<key>RunAtLoad</key>
+<true/>
+<key>UserName</key>
 <string>_mongodb</string>
-</true></false></true></dict>
+</dict>
 </plist>
 ```
 
