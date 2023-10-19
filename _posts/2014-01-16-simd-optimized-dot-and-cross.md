@@ -4,24 +4,24 @@ title: SIMD optimized dot and cross product functions
 subtitle: C++ examples of vector intrinsics.
 permalink: simd-optimized-dot-and-cross
 categories:
-- Tech
+  - Tech
 tags:
-- sse
-- dot product
-- cross product
-- 3d math
-- simd
-- intrinsics
-- c++
+  - sse
+  - dot product
+  - cross product
+  - 3d math
+  - simd
+  - intrinsics
+  - c++
 ---
 
 In my limited spare time, I've been trying to teach myself some basic [SIMD programming](http://en.wikipedia.org/wiki/SIMD) in order to optimize my 3D math library I've been work on. Whilst at EA, we had the idea of having an "FPU" (Floating-point Processing Unit) math library, alongside a "VPU" (vector processing unit) optimized class. I decided to do the same thing in my math library for a few reasons:
 
 1. It allows me to write a simpler, much more basic math library that I could use in unit tests to validate the VPU version
-2. It gives me a way to accurately benchmark my SIMD optimized code path
-3. Finally there are cases where it's actually better to use a floating point class version, which I'll briefly explain later
+1. It gives me a way to accurately benchmark my SIMD optimized code path
+1. Finally there are cases where it's actually better to use a floating point class version, which I'll briefly explain later
 
-As I wanted to guarantee backwards compatibility, I decided to just use SSE2 instructions and not anything more fancy, which means it'll work on every 64-bit desktop processor* as well as hopefully port quite nicely to [neon for ARM](http://en.wikipedia.org/wiki/ARM_architecture#Advanced_SIMD_.28NEON.29) (more on that in a future post!)
+As I wanted to guarantee backwards compatibility, I decided to just use SSE2 instructions and not anything more fancy, which means it'll work on every 64-bit desktop processor\* as well as hopefully port quite nicely to [neon for ARM](http://en.wikipedia.org/wiki/ARM_architecture#Advanced_SIMD_.28NEON.29) (more on that in a future post!)
 
 Rather than go through everything, I'll instead just explain what I did for dot and cross products, which will show most of the simple ways of doing things<a id="more"></a><a id="more-175"></a>
 
@@ -64,7 +64,7 @@ Pretty simple huh?! An interesting point to note is that this snippet of code ac
 __attribute__ ((aligned (x)));
 ```
 
-keyword in the class declaration. This is actually pretty annoying, as it means for vector types that are smaller than 16bytes (so Vector2 and Vector3) it means we'll be wasting space between instances of this class. It is this reason why it's sometimes actually faster to use the FPU variants of the vector class, as it packs nicer, meaning less cache misses. Interesting fact, whilst at EA and working on the AI systems in Need For Speed, we actually found it was quicker to use the FPU vectors when performing things like A* algorithms, as the cache-miss overhead on the PS3 and X360 processors cancelled out any benefit from using the VPU variants.
+keyword in the class declaration. This is actually pretty annoying, as it means for vector types that are smaller than 16bytes (so Vector2 and Vector3) it means we'll be wasting space between instances of this class. It is this reason why it's sometimes actually faster to use the FPU variants of the vector class, as it packs nicer, meaning less cache misses. Interesting fact, whilst at EA and working on the AI systems in Need For Speed, we actually found it was quicker to use the FPU vectors when performing things like A\* algorithms, as the cache-miss overhead on the PS3 and X360 processors cancelled out any benefit from using the VPU variants.
 
 # The Dot Product shuffle
 

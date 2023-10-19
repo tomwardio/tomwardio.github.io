@@ -4,14 +4,15 @@ title: Un-premultiplied textures on Metal
 subtite: Why doesn't iOS support un-premultiplied textures?!
 permalink: un-premultiplied-textures-on-metal
 categories:
-- Tech
+  - Tech
 tags:
-- ios
-- Metal
-- texture loading
-- objective-c
-- Apple
+  - ios
+  - Metal
+  - texture loading
+  - objective-c
+  - Apple
 ---
+
 Recently in my spare time I've been dabbling on Apple's not-so-new OpenGL replacement, Metal, which has frankly been an absolute joy. It's a very neat and tidy API, a lot simpler to understand than the monstrosity that is OpenGL and gives a lot more fine-grained control over command dispatch, sharing buffers and threaded dispatch (yey!)
 
 For all its bells and whistles, there was one thing that I found really annoying. It's quite a common thing to want to use a texture for applying various effects in OpenGL, using the R, G, B and A values the image's pixels to store arbitrary data in. A good example is when doing bump mapping, where you might want to store the bump amount in the diffuse texture's alpha.

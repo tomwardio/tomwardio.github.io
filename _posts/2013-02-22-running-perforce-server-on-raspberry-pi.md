@@ -5,15 +5,16 @@ subtitle: Tutorial for getting perforce running on Rasbian.
 permalink: running-perforce-server-on-raspberry-pi
 header-img: uploads/posts/running-perforce-server-on-raspberry-pi/background.jpg
 categories:
-- Tech
+  - Tech
 tags:
-- perforce
-- raspberry pi
-- arm
-- raspbmc
-- linux
-- ld-linux.so.3
+  - perforce
+  - raspberry pi
+  - arm
+  - raspbmc
+  - linux
+  - ld-linux.so.3
 ---
+
 Although I've used SVN and to a lesser extent CVS before, my fave source control tool has to be perforce. I used it heavily at EA and have started to use it at The Foundry for one of the products I'm working on, and frankly I think it's great.
 
 I also recently bought a Raspberry Pi, and thought I'd give it a go trying to migrate my Perforce server from an Amazon EC2 server to my Pi, and save the $10 or so it costs a year to store things in the cloud.

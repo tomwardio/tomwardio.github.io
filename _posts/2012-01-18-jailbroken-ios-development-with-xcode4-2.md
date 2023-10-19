@@ -4,13 +4,14 @@ title: Jailbroken iOS development with XCode4.2 and iOS5
 subtitle: Guide to show how to jailbreak iOS device for development.
 permalink: jailbroken-ios-development-with-xcode4-2
 categories:
-- Tech
+  - Tech
 tags:
-- iPhone
-- development
-- jailbreaking
-- XCode 4.2
+  - iPhone
+  - development
+  - jailbreaking
+  - XCode 4.2
 ---
+
 Recently I've been having a tinker with iOS development, and was especially interested in doing something to do with camera capture and manipulation.
 
 Unfortunately without signing up for a $99 Apple developer account you can't deploy or debug your code on an iPhone device, and the iPhone/iPad simulator doesn't emulate anything camera related. Not ideal. However with a little bit of tinkering, it is possible to enable deployment onto your jailbroken device, as well as debug to your heart's content! So, here's a step by step guide to doing just that:
@@ -29,8 +30,8 @@ To be able to get unsigned code onto your device, you're going to need to jailbr
 
 Now you've jailbroken your iDevice, you need to install a bit of software called Appysync that bypasses the code signing that Apple does when you try and load an executable. This is so your can install your own apps without needing a valid provisioning license from Apple (what you need to pay $99 for).
 
-To do this, goto cydia, click manage and add the following depot to your list of depots:  
-[http://cydia.hackulo.us](http://cydia.hackulo.us)  
+To do this, goto cydia, click manage and add the following depot to your list of depots:\
+[http://cydia.hackulo.us](http://cydia.hackulo.us)\
 Cydia might show a popup saying that this repository has been marked for illegal activity, which you can ignore (this is because Appsync allows you to install **any** unsigned app, which could be used to install things illegally. It should go without saying not to do that, this guide is only for running your own code, not someone else's illegally!)
 
 [![](/uploads/posts/jailbroken-ios-development-with-xcode4-2/CydiaSources-200x300.png "CydiaSources")](/uploads/posts/jailbroken-ios-development-with-xcode4-2/CydiaSources.png)

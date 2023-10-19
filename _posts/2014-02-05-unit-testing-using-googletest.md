@@ -3,14 +3,15 @@ layout: post
 title: Unit Testing using googletest
 permalink: unit-testing-using-googletest
 categories:
-- Tech
+  - Tech
 tags:
-- c++
-- googletest
-- gtest
-- unit testing
-- automation
+  - c++
+  - googletest
+  - gtest
+  - unit testing
+  - automation
 ---
+
 A while back I was teaching myself various basic data structures and algorithms, as well as writing my own allocator classes, when I came to a point where I needed a simple way to unit test all my workings. I've used a couple of unit tests systems in the past ([boost](http://www.boost.org/doc/libs/1_35_0/libs/test/doc/components/utf/index.html) for instance) but always found that they didn't include a nice pretty printer, nor a simple way to write the tests.
 
 Completely separately I've also been working on using [protocol buffers](https://code.google.com/p/protobuf/) at work for dynamic messaging between applications (more on this in the future) and noticed they used a thing called googletest. Long story short, after 30mins (maybe less) I had created my first unit test and was very happy with just how simple it is! It also has some really cool floating point test macros, which makes float comparisons a breeze.

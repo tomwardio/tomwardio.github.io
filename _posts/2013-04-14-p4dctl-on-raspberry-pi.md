@@ -5,16 +5,17 @@ subtitle: Adding control daemon for controlling perforce server.
 permalink: p4dctl-on-raspberry-pi
 header-img: uploads/posts/p4dctl-on-raspberry-pi/background.jpg
 categories:
-- Tech
+  - Tech
 tags:
-- perforce
-- raspberry pi
-- arm
-- raspbmc
-- linux
-- debian
-- scm
+  - perforce
+  - raspberry pi
+  - arm
+  - raspbmc
+  - linux
+  - debian
+  - scm
 ---
+
 So with perforce running on my Raspberry Pi, I now wanted to setup a service to deal with starting, stopping and backing up my perforce server. Although I could've just created an init.d script myself, I decided to use the open source [p4dctl](http://public.perforce.com/wiki/P4dctl "p4dctl") to do most of the work. The problem was that this wasn't compiled for ARM, especially not for a hard-float ARM distro that I'm using. Here I explain how I got it built, but if you're lazy like me I've also uploaded a copy [here](/uploads/posts/p4dctl-on-raspberry-pi/p4dctl.zip) that you can unzip and copy to your device.
 
 # Getting setup to build p4dctl
@@ -47,7 +48,7 @@ This should create a jam executable, which you can either add to your PATH, or c
 
 # Building p4dctl
 
-With jam built for ARM, it's time to build p4dctl. First download the source code from the public perforce repository [here](http://public.perforce.com:8080/@md=d&cd=//guest/tony_smith/perforce/p4dctl/src/&c=M2e@//guest/tony_smith/perforce/p4dctl/src/?ac=83), then get the [p4api](ftp://ftp.perforce.com/perforce/r13.1/bin.linux26armel/p4api.tgz "p4api") for ARMel and untar somewhere, taking a note of the** **full** path
+With jam built for ARM, it's time to build p4dctl. First download the source code from the public perforce repository [here](http://public.perforce.com:8080/@md=d&cd=//guest/tony_smith/perforce/p4dctl/src/&c=M2e@//guest/tony_smith/perforce/p4dctl/src/?ac=83), then get the [p4api](ftp://ftp.perforce.com/perforce/r13.1/bin.linux26armel/p4api.tgz "p4api") for ARMel and untar somewhere, taking a note of the\*\* **full** path
 
 Next change into the p4dctl source directory and type
 

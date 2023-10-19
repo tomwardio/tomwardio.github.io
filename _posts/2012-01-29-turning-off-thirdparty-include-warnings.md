@@ -1,17 +1,19 @@
 ---
 layout: post
 title: Turning off Thirdparty include warnings
-subtitle: Removing Thirdparty include warnings can make showing your own warnings easier.
+subtitle: Removing Thirdparty include warnings can make showing your own warnings
+  easier.
 permalink: turning-off-thirdparty-include-warnings
 categories:
-- Tech
+  - Tech
 tags:
-- includes
-- warnings
-- gcc
-- visual studio
-- annoyances
+  - includes
+  - warnings
+  - gcc
+  - visual studio
+  - annoyances
 ---
+
 Love it or hate it, compiler warnings are there to try and tell you that you're doing something silly, and you should fix it even though it's not the end of the world. The most annoying thing I've found recently is when you use someone else's code and find that there's loads of warnings. Things like boost and Qt can have loads of warnings, and as tempting as it is to fix them locally, it then becomes a bit of a nightmare when updating the library, as well as some being rather difficult to fix.
 
 One useful thing that you can do on Linux or OSX/Mac with gcc is change the way you add include paths. Rather than doing this:

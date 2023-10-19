@@ -3,14 +3,15 @@ layout: post
 title: Disable Ubuntu ALT key moving windows - the easy way!
 permalink: disable-ubuntu-alt-key-moving-windows-the-easy-way
 categories:
-- Tech
+  - Tech
 tags:
-- linux
-- maya
-- modo
-- ubuntu
-- alt key
+  - linux
+  - maya
+  - modo
+  - ubuntu
+  - alt key
 ---
+
 Because I've had to install Ubuntu a lot recently, and I always forget how to do this.
 
 Basically by default Ubuntu binds ALT+LMB to moving windows. This is incredibly frustrating for nearly every 3D application, as this is usually the way to rotate a camera, so most people disable this shortcut.

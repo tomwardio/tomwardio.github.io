@@ -4,13 +4,14 @@ title: Class Layout Reporting with VC++ Compiler
 subtitle: Tutorial to show class layout on Windows using VC++.
 permalink: class-layout-reporting-with-vc-compiler
 categories:
-- Tech
+  - Tech
 tags:
-- visual studio
-- c++
-- class layout
-- vs2010
+  - visual studio
+  - c++
+  - class layout
+  - vs2010
 ---
+
 Last month whilst searching for a VC++ compiler flag (the -Isystem equivalent for VS, which I never did find) I stumbled across this hidden flag, which allows you to print out what the compiler generates for your class structure. Very cool!
 
 To print out the class structure for all classes in your compilation, you can use /d1reportAllClassLayout. If you want to /d1reportSingleClassLayoutxxx, where xxx is the name to search for
@@ -42,6 +43,7 @@ class ClassA size(16):
 | <alignment member="">(size=3)
 +---
 ```
+
 The first thing to notice is the `<alignment>` members. This is super super useful for finding gaps in your data structures due to memory alignment, which is sometimes difficult to assertain (especially with lots of inheritance). Removing these gaps will make your data structures better packed and therefore reduce the number of cache misses, as well as make sure there's no uninitialised memory, a common cause for undeterministic data in serialised data structures.</alignment></alignment></alignment>
 
 But what does the compiler generate if there's an alignment gap at the end of a base class? Here's another class that derives from ClassA

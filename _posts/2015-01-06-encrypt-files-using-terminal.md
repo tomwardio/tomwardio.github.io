@@ -4,14 +4,15 @@ title: Encrypt Files using Terminal
 subtitle: How-to encrypt files using built in OSX tools.
 permalink: encrypt-files-using-terminal
 categories:
-- Tech
+  - Tech
 tags:
-- python
-- openssl
-- encrypting files
-- bash
-- terminal
+  - python
+  - openssl
+  - encrypting files
+  - bash
+  - terminal
 ---
+
 Sometimes it's really useful to be able to encrypt a file locally, and although there's lots of pieces of software that can do this for you, I much prefer to just do it myself. Using Terminal's "openssl" command, it's really really simple to encrypt a file well enough for snoops to not be able to read.
 
 To encrypt a file, simply run the following from Terminal. It'll then ask you for a password to encrypt the file with (you can pass this in as an argument using -k <password>, but then people can see what it is in the Terminal history, and we don't want that!)</password>
@@ -22,10 +23,10 @@ openssl enc -aes-256-cbc -salt -in </path/for/file/to/encrypt.txt> -out </path/t
 
 Let's break down this command:
 
-* _enc -aes-256-cbc_: This is the encryption algorithm that you want to use. There's a whole raft of options that are possible, but I'd recommend using AES-256, it's pretty secure.
-* _-salt_: You should always use this, it basically adds another level of security by "salting" the encryption. This basically means that it you encrypt the same file with the same password, it'll come out different. This is really really useful to stop thieves from using brute force to figure out the password.
-* _-in_: Pretty self-explanitory, is basically file path to the file you want to encrypt. This could obviously be whatever you like.
-* _-out_: Again, this is straight forward enough, should be a location on disk to save the encrypted file to.
+- _enc -aes-256-cbc_: This is the encryption algorithm that you want to use. There's a whole raft of options that are possible, but I'd recommend using AES-256, it's pretty secure.
+- _-salt_: You should always use this, it basically adds another level of security by "salting" the encryption. This basically means that it you encrypt the same file with the same password, it'll come out different. This is really really useful to stop thieves from using brute force to figure out the password.
+- _-in_: Pretty self-explanitory, is basically file path to the file you want to encrypt. This could obviously be whatever you like.
+- _-out_: Again, this is straight forward enough, should be a location on disk to save the encrypted file to.
 
 Cool, so we now have a pretty well encrypted file! You probably want to be able to decrypt it though as well (pretty useless otherwise right?!). You can do this by running the following:
 

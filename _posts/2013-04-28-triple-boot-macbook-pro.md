@@ -4,23 +4,24 @@ title: Triple-boot Macbook Pro
 subtitle: Installing OSX, Windows 7 and Redhat.
 permalink: triple-boot-macbook-pro
 categories:
-- Tech
+  - Tech
 tags:
-- refit
-- triple-boot
-- osx
-- rhel
-- windows
-- tripleboot
-- mbr
-- macbook
-- mbp
+  - refit
+  - triple-boot
+  - osx
+  - rhel
+  - windows
+  - tripleboot
+  - mbr
+  - macbook
+  - mbp
 ---
+
 For the past year I've been working on porting [modo](http://www.luxology.com/modo/ "modo") to Linux, which involved me having to do lots of fun filled tests on both OSX and Windows, as well as having to haul a machine to/from America in order to work with the dev team out in Mountain View. After much messing about this week, I finally got my 2011 MBP triple-booting all three platforms correctly! So that I can remember how to do it again, here's what I did
 
 The key to all of this is partition management, followed by MBR magic. A lot of what follows was what I could piece together from various blogs and posts, or some good old fashioned trial-and-error
 
-Firstly, this is completely from scratch with a fresh 1TB drive, and using a Macbook Pro from late 2011\. The three distros I've gone for are OSX Mountain Lion, RHEL 6.4 and Windows 7\. YMMV with newer macbooks and different distros...<a id="more"></a><a id="more-160"></a>
+Firstly, this is completely from scratch with a fresh 1TB drive, and using a Macbook Pro from late 2011. The three distros I've gone for are OSX Mountain Lion, RHEL 6.4 and Windows 7. YMMV with newer macbooks and different distros...<a id="more"></a><a id="more-160"></a>
 
 # First: Install Mountain Lion
 

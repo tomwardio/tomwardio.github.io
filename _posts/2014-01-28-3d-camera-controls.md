@@ -4,18 +4,19 @@ title: 3D Camera Controls
 subtitle: Examples of doing camera controls in C++.
 permalink: 3d-camera-controls
 categories:
-- Tech
-- 3D
+  - Tech
+  - 3D
 tags:
-- 3d math
-- cameras
-- quaternions
-- matrix
-- opengl
-- viewmatrix
-- orbiting
-- lookat
+  - 3d math
+  - cameras
+  - quaternions
+  - matrix
+  - opengl
+  - viewmatrix
+  - orbiting
+  - lookat
 ---
+
 In my spare time I've started working on making my own little model viewer in OpenGL (more on this later) and I've recently been working on creating some nice camera controls. Although I've had to delve into cameras a few times over the years, this is the first time I'd had to create one from scratch and was quite an experience! I also found the help online to be a bit sparse, with various ways of doing it but none I really liked.
 
 Here's what I learnt and snippets of my final solution, I haven't gone into the nitty gritty of all the math functions, but there's plenty of places to find that stuff.

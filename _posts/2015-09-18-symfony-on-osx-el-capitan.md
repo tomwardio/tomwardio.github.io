@@ -4,15 +4,16 @@ title: Symfony on OSX El Capitan
 subtitle: Setting up Symfony on El Capitan, using Apache.
 permalink: symfony-on-osx-el-capitan
 categories:
-- Tech
+  - Tech
 tags:
-- osx
-- web
-- symfony
-- apache
-- el capitan
-- php
+  - osx
+  - web
+  - symfony
+  - apache
+  - el capitan
+  - php
 ---
+
 I recently updated my laptop to Apple's newest OS, El Capitan, and unfortunately due to their new rootless feature, the setup I had working for web development had been reset. For this reason, I thought I'd really quickly show how easy it is to setup an Apple laptop to develop Symfony websites. This guide should also work for previous versions of OSX as well.
 
 # Step 1: Enable Apache

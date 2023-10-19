@@ -3,17 +3,18 @@ layout: post
 title: Creating Child Wordpress Themes
 permalink: creating-child-wordpress-themes
 categories:
-- Tech
+  - Tech
 tags:
-- Wordpress
-- child themes
-- CSS
+  - Wordpress
+  - child themes
+  - CSS
 ---
+
 Wordpress is great, I'm a huge fan of how simple it is to install and get setup. However, once it is setup, getting a theme that works for you is a little more tricky. For me this meant that after a joyous 10min installation, I then spent the best part of a day firstly trying to find a theme I liked, and eventually giving up and simply customising the default [twentyeleven](http://theme.wordpress.com/themes/twentyeleven/) theme that comes with Wordpress.
 
 This was actually surprisingly easy even with my limited CSS and HTML experience using the joy that is <a href="http://codex.wordpress.org/Child_Themes">Child Themes</a>. Using child themes allow you to customise any theme without changing it directly, meaning you can get updates and fixes without affecting the customisations you've made, which is pretty cool
 
-#Step 1: Setup your style.css
+# Step 1: Setup your style.css
 
 Create a folder for your theme and within this, create your style.css. Then stuff this at the top of it:
 
@@ -37,7 +38,7 @@ The most important line here is the `Template: twentyeleven` line, which tells w
 
 This is all you need to have a child theme which is identical to the parent. You can zip up this folder and install on your blog like any other theme.
 
-#Customising the Style
+# Customising the Style
 
 Now that we have the basics sorted, let's start customizing the style. The first thing I wanted to change the width when in one-column mode. Searching through the twentyeleven css, I found this:
 
@@ -59,7 +60,7 @@ font-size: 12px;
 
 You get the idea. Simply putting in your style.css anything you want to be different will make the change, without having to modify the original theme.
 
-#Changing Functions
+# Changing Functions
 
 You can also add/modify any functions inside the Functions.php file by creating a new file *of the same name* within the child theme. It's important to note that this doesn't _replace_ the original, but is loaded _as well as_ the original, and second. This means that say I want the header image height to be smaller, all I have to add to my functions.php is:
 
@@ -69,7 +70,7 @@ You can also add/modify any functions inside the Functions.php file by creating 
 ?>
 ```
 
-#Customising the page templates
+# Customising the page templates
 
 The final thing you can do in child pages is modify the original page templates. This is a simple case of copying the original from the theme, making the appropriate changes and saving in the same place in the child theme folder.
 For me, I wanted rather than my blog name to be in text above my header picture to be an overlay, using the magic of CSS. By following [this guide](http://css-tricks.com/3118-text-blocks-over-image/) I added the following to my header.php:

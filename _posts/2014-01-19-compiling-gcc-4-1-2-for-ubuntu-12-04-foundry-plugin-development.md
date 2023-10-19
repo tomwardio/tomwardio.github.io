@@ -3,19 +3,20 @@ layout: post
 title: Compiling GCC 4.1.2 for Ubuntu 12.04 (Foundry plugin development)
 permalink: compiling-gcc-4-1-2-for-ubuntu-12-04-foundry-plugin-development
 categories:
-- Tech
+  - Tech
 tags:
-- gcc
-- Foundry
-- plugins
-- maya
-- modo
-- nuke
-- '4.1'
-- ubuntu
-- ubuntu 12.04
-- gcc-4.1
+  - gcc
+  - Foundry
+  - plugins
+  - maya
+  - modo
+  - nuke
+  - '4.1'
+  - ubuntu
+  - ubuntu 12.04
+  - gcc-4.1
 ---
+
 So Last year I posted about triple booting a 2011 MBP, which I can now reveal was to do with me porting [MODO to Linux](http://www.cgchannel.com/2013/03/luxology-previews-modo-for-linux/ "MODO to Linux") (which was pretty cool!). I have since moved to doing all of my development at work to Ubuntu 12.04 so had to compile and install the GCC 4.1.2 compiler, as this is the official compiler for all Foundry applications. This wasn't as straight forward as I hoped, so to save me (and anyone else) going through the same pain, here's a guide for doing just this.
 <a id="more"></a><a id="more-213"></a>
 

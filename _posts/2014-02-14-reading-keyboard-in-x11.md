@@ -3,15 +3,16 @@ layout: post
 title: Reading the Keyboard in X11
 permalink: reading-keyboard-in-x11
 categories:
-- Tech
+  - Tech
 tags:
-- linux
-- X11
-- qt
-- keyboard
-- XKeycodeToKeysym
-- XQueryKeymap
+  - linux
+  - X11
+  - qt
+  - keyboard
+  - XKeycodeToKeysym
+  - XQueryKeymap
 ---
+
 I actually began this post well over a year ago, as I remember struggling to work out how to read keyboard input in X. Anyway, I thought I'd finally finish it off for posterity's sake :)
 
 I recently had to implement some API calls in Linux to be able to return what keys were currently being pressed. As I was using Qt for the UI layer (which, by the way, is now my favourite UI framework!) I was hoping there would be some platform-agnostic call I could make. However (and kinda rightfully so) Qt doesn't expose a way to do this, as it's assumed you should just do things based on events.

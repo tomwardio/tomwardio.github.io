@@ -3,16 +3,17 @@ layout: post
 title: Setting up MongoDB as service on OSX
 permalink: setting-up-mongodb-as-service-on-osx
 categories:
-- Tech
+  - Tech
 tags:
-- osx
-- nosql
-- mongodb
-- service
-- launchd
-- launchctl
-- daemon
+  - osx
+  - nosql
+  - mongodb
+  - service
+  - launchd
+  - launchctl
+  - daemon
 ---
+
 Recently I've been getting my teeth into NoSQL-based map-reduce problems, where I want to throw a lot of data into a database and then produce some interesting queries. For this I decided to start playing about with MongoDB, which seems to be one of the most popular solutions out there. For this, I wanted to get it running as a system service, in the same way as having Apache and MySQL setup on my macbook. Here's what I did to get this setup using launchd and a `_mongodb` system user.
 
 # Installing MongoDB
@@ -156,7 +157,7 @@ This will open the file in TextEdit, though you can use whatever editor you like
 </plist>
 ```
 
-This will setup a new "ord.mongodb.mongod" service, running as _mongodb, and using a config file to determine the settings for the instance of mongodb. You can obviously change whatever you need, but if you followed the previous steps, this is all you should need.
+This will setup a new "ord.mongodb.mongod" service, running as \_mongodb, and using a config file to determine the settings for the instance of mongodb. You can obviously change whatever you need, but if you followed the previous steps, this is all you should need.
 
 # Creating the MongoDB Configuration File
 
