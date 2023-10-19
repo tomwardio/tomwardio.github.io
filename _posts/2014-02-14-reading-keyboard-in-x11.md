@@ -13,15 +13,28 @@ tags:
   - XQueryKeymap
 ---
 
-I actually began this post well over a year ago, as I remember struggling to work out how to read keyboard input in X. Anyway, I thought I'd finally finish it off for posterity's sake :)
+I actually began this post well over a year ago, as I remember struggling to
+work out how to read keyboard input in X. Anyway, I thought I'd finally finish
+it off for posterity's sake :)
 
-I recently had to implement some API calls in Linux to be able to return what keys were currently being pressed. As I was using Qt for the UI layer (which, by the way, is now my favourite UI framework!) I was hoping there would be some platform-agnostic call I could make. However (and kinda rightfully so) Qt doesn't expose a way to do this, as it's assumed you should just do things based on events.
+I recently had to implement some API calls in Linux to be able to return what
+keys were currently being pressed. As I was using Qt for the UI layer (which, by
+the way, is now my favourite UI framework!) I was hoping there would be some
+platform-agnostic call I could make. However (and kinda rightfully so) Qt
+doesn't expose a way to do this, as it's assumed you should just do things based
+on events.
 
-After a few hours googling and scratching my head, I realised this wasn't going to be as simple as I imagined, as the documentation for anything X based seems incessantly complex. Anyway, here's how I did it:
+After a few hours googling and scratching my head, I realised this wasn't going
+to be as simple as I imagined, as the documentation for anything X based seems
+incessantly complex. Anyway, here's how I did it:
 
 # Getting the Keys being Pressed
 
-First I get from the QApplication the currently actibe window. Assuming we have a valid window, I then get the X11 display pointer and use this to call [XQueryKeymap](http://www.unix.com/man-page/All/3/XQueryKeymap/ "XQueryKeymap"). This function takes an array of 32 chars, which is uses to mark what physical keys are being pressed, one key per bit.
+First I get from the QApplication the currently actibe window. Assuming we have
+a valid window, I then get the X11 display pointer and use this to call
+[XQueryKeymap](http://www.unix.com/man-page/All/3/XQueryKeymap/ "XQueryKeymap").
+This function takes an array of 32 chars, which is uses to mark what physical
+keys are being pressed, one key per bit.
 
 ```cpp
 static const uint32_t K_KEYMAP_SIZE = 32;
@@ -68,7 +81,14 @@ if( window )
 
 # Converting the X11 key to Qt key
 
-In the above code, once I have the bit array of buttons being pressed, I then iterate through all the keys being pressed and convert the pysical key into a Qt key. This basically involves using the [XKeycodeToKeysym](http://www.unix.com/man-page/all/3x/XKeycodeToKeysym "XKeycodeToKeysym") function, which will convert a key position into a key symbol. However, as each physical key can have multiple meanings (based on modifiers for instance) I iterate over all the symbols (using an iterator) and return the first key that I care about.
+In the above code, once I have the bit array of buttons being pressed, I then
+iterate through all the keys being pressed and convert the pysical key into a Qt
+key. This basically involves using the
+[XKeycodeToKeysym](http://www.unix.com/man-page/all/3x/XKeycodeToKeysym "XKeycodeToKeysym")
+function, which will convert a key position into a key symbol. However, as each
+physical key can have multiple meanings (based on modifiers for instance) I
+iterate over all the symbols (using an iterator) and return the first key that I
+care about.
 
 ```cpp
 typedef QMap <keysym, int32_t="">KeySymToQtKeyMap;</keysym,>
@@ -103,4 +123,6 @@ ConvertKeyToQtKey(
 }
 ```
 
-This isn't the perfect solution, but for my case it worked perfectly. The moral of the story is that looking at the keyboard directly is a Bad Idea and that you should always always listen to button events instead.
+This isn't the perfect solution, but for my case it worked perfectly. The moral
+of the story is that looking at the keyboard directly is a Bad Idea and that you
+should always always listen to button events instead.

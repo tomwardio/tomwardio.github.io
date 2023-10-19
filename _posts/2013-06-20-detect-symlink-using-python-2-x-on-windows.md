@@ -12,7 +12,11 @@ tags:
   - python 2.7
 ---
 
-Just a quick one today, spent today automating the creation of a VS project for the product I'm working on (which uses a custom build system) and found myself needing to detect if a directory is a symlink on Windows. Python does provide a function `os.path.islink(dirPath)` but annoyingly on Python 2.x this always returns false for Windows symlinks. Great!
+Just a quick one today, spent today automating the creation of a VS project for
+the product I'm working on (which uses a custom build system) and found myself
+needing to detect if a directory is a symlink on Windows. Python does provide a
+function `os.path.islink(dirPath)` but annoyingly on Python 2.x this always
+returns false for Windows symlinks. Great!
 
 So here's a working version of the function that I put together using ctypes:
 
