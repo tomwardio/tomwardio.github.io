@@ -25,7 +25,8 @@ work to Ubuntu 12.04 so had to compile and install the GCC 4.1.2 compiler, as
 this is the official compiler for all Foundry applications. This wasn't as
 straight forward as I hoped, so to save me (and anyone else) going through the
 same pain, here's a guide for doing just this.
-<a id="more"></a><a id="more-213"></a>
+
+<!--more-->
 
 # First get the right GCC and Packages
 

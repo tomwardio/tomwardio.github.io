@@ -32,7 +32,9 @@ some good old fashioned trial-and-error
 Firstly, this is completely from scratch with a fresh 1TB drive, and using a
 Macbook Pro from late 2011. The three distros I've gone for are OSX Mountain
 Lion, RHEL 6.4 and Windows 7. YMMV with newer macbooks and different
-distros...<a id="more"></a><a id="more-160"></a>
+distros...
+
+<!--more-->
 
 # First: Install Mountain Lion
 

@@ -31,7 +31,9 @@ pre-multiply the image by the alpha channel. This means that when you load the
 UIImage, iOS automatically multiplies the R, G and B by the pixel's alpha
 amount, which means you lose the color values for anywhere there's a zero alpha.
 I might be doing something wrong, so I've uploaded an example iOS project that
-should show the issue [here](https://github.com/tomwardio/MetalPremultTexture):
+should show the issue [here](https://github.com/tomwardio/MetalPremultTexture).
+
+<!--more-->
 
 # Loading the UIImage
 

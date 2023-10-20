@@ -21,6 +21,8 @@ would be to simply recompile Qt to remove this offending line, but as we wanted
 to share the *exact* same library with other products, I didn't have that
 luxury.
 
+<!--more-->
+
 So I did something really really naughty: I used a trick to modify the API call
 to not actually do anything. Welcome to API Hooking! This is actually used quite
 a lot by profilers or memory tracking software to hook into low-level API's and

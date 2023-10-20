@@ -18,6 +18,8 @@ there's lots of pieces of software that can do this for you, I much prefer to
 just do it myself. Using Terminal's "openssl" command, it's really really simple
 to encrypt a file well enough for snoops to not be able to read.
 
+<!--more-->
+
 To encrypt a file, simply run the following from Terminal. It'll then ask you
 for a password to encrypt the file with (you can pass this in as an argument
 using -k <password>, but then people can see what it is in the Terminal history,

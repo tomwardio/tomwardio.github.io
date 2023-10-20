@@ -26,7 +26,9 @@ on events.
 
 After a few hours googling and scratching my head, I realised this wasn't going
 to be as simple as I imagined, as the documentation for anything X based seems
-incessantly complex. Anyway, here's how I did it:
+incessantly complex. Anyway, here's how I did it!
+
+<!--more-->
 
 # Getting the Keys being Pressed
 

@@ -21,6 +21,8 @@ machines or various other reasons. As I had a Raspberry Pi knocking about, I
 decided to set it up as a VPN server to allow me to securely connect back using
 my iOS devices. So here's a quick guide on how to do just that!
 
+<!--more-->
+
 # Step 1 - Setup the device
 
 First things first, go ahead and install Rasbian from the official source and

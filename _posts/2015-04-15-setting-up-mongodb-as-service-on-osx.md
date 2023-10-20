@@ -22,6 +22,8 @@ it running as a system service, in the same way as having Apache and MySQL se
 on my macbook. Here's what I did to get this setup using launchd and a
 `_mongodb` system user.
 
+<!--more-->
+
 # Installing MongoDB
 
 This is the easy bit :) You can install through homebrew, but I decided to just

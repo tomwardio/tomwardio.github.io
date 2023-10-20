@@ -21,6 +21,8 @@ To print out the class structure for all classes in your compilation, you can
 use /d1reportAllClassLayout. If you want to /d1reportSingleClassLayoutxxx, where
 xxx is the name to search for
 
+<!--more-->
+
 For anyone who's done any data structure optimisation, or tried to make binary
 serialisation deterministic, this information is invaluable. To explain why,
 let's see what the compiler generates for this very simple class:

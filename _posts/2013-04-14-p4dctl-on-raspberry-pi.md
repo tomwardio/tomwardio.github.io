@@ -37,7 +37,9 @@ so put
 [Debian Wheezy soft-float version](http://www.raspberrypi.org/downloads "raspberry-pi-wheezy")
 on it.
 
-<a id="more"></a><a id="more-138"></a>Once you've Wheezy installed and running,
+<!--more-->
+
+Once you've Wheezy installed and running,
 you'll need to get a couple of packages installed. SSH onto the device and run
 the following command:
 

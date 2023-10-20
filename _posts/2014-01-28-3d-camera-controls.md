@@ -28,6 +28,8 @@ Here's what I learnt and snippets of my final solution, I haven't gone into the
 nitty gritty of all the math functions, but there's plenty of places to find
 that stuff.
 
+<!--more-->
+
 # First Things First, Looking at a Point
 
 Firstly I wanted to make a camera that I could position in world space, looking

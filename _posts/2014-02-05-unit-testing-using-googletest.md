@@ -28,6 +28,8 @@ had created my first unit test and was very happy with just how simple it is! It
 also has some really cool floating point test macros, which makes float
 comparisons a breeze.
 
+<!--more-->
+
 # My First Unit Test
 
 It really is very simple to use, here's a quick test I wrote for my quicksort

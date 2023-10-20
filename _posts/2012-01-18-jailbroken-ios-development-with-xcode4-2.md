@@ -33,6 +33,8 @@ I should also say I took a lot of this from
 Hopefully I just made it a little easier and made sure it worked on Lion,
 XCode4.2 with iOS5...
 
+<!--more-->
+
 # Step 1: Jailbreak your iDevice
 
 To be able to get unsigned code onto your device, you're going to need to

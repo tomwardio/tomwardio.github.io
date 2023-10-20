@@ -20,6 +20,8 @@ had been reset. For this reason, I thought I'd really quickly show how easy it
 is to setup an Apple laptop to develop Symfony websites. This guide should also
 work for previous versions of OSX as well.
 
+<!--more-->
+
 # Step 1: Enable Apache
 
 Luckily Apple hasn't decided (yet) to remove Apache from the operating system,

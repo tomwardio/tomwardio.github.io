@@ -24,6 +24,8 @@ the manifest file, which you're
 There's two approaches to do this. The first is to simply run mt.exe, passing in
 the manifest generated during the link stage.
 
+<!--more-->
+
 ```
 > mt.exe -manifest MyApp.exe.manifest -outputresource:MyApp.exe;1
 ```

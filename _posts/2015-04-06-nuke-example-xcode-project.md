@@ -16,6 +16,8 @@ It's been awhile since I've done any development on NUKE, so when the other day
 I was asked to put together a simple plugin on OSX, I thought it would be a good
 time to try and create a simple XCode project to do my development in.
 
+<!--more-->
+
 My reasoning for doing this was two fold. Firstly, Nuke's SDK currently ships
 with a simple Makefile that you can use to build all of the example plugins.
 However, it uses GCC as the compiler and references the 10.6 SDK (!), both of

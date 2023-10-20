@@ -24,6 +24,8 @@ Themes</a>. Using child themes allow you to customise any theme without changing
 it directly, meaning you can get updates and fixes without affecting the
 customisations you've made, which is pretty cool
 
+<!--more-->
+
 # Step 1: Setup your style.css
 
 Create a folder for your theme and within this, create your style.css. Then
