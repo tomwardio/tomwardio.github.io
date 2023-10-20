@@ -1,26 +1,30 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+title: "my blog"
+author: "Tom Ward"
+description: "A blog about nothing"
+permalink: /:title/
+lang: "en"
+excerpt_separator: <!--more-->
+date_format: "%B %d, %Y"
 
-# Site settings
-title: my blog
-name: Tom Ward
-email: contactme@tomjbward.co.uk
-header-img: img/default-bg.jpg
-description: >
-  A technical blog with nothing more than a sparse collection of semi-
-  interesting things for geeky folk.
-url: "http://www.tomjbward.co.uk" # the base hostname & protocol for your site
-twitter_username: wardio
-github_username:  tomwardio
+# Layout
+show_excerpts: true        # show article excerpts on the home page
+show_frame: false           # adds a gray frame to the site
+show_sidebar: false        # show a sidebar instead of the usual header
+minimal: false             # use a dark header
 
-# Build settings
+# Menu
+navigation:                # accepts {file, title, url, icon, sidebaricon}
+  - {file: "index.html"}
+  - {file: "about.md"}
+
+external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
+  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
+  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
+  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+
+comments:
+  disqus: true
+  disqus_shortname: "tomjbward"
+
 plugins:
-  - jekyll-paginate
-permalink: pretty
-paginate: 10
-gems: [jekyll-paginate]
-exclude: ["node_modules", "CNAME", "Gruntfile.coffee", "package.json", "README.md"]
+ - jekyll-feed
