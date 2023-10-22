@@ -2,7 +2,6 @@
 layout: post
 title: Symfony on OSX El Capitan
 subtitle: Setting up Symfony on El Capitan, using Apache.
-permalink: symfony-on-osx-el-capitan
 categories:
   - Tech
 tags:

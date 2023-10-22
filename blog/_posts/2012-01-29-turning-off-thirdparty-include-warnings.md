@@ -3,7 +3,6 @@ layout: post
 title: Turning off Thirdparty include warnings
 subtitle: Removing Thirdparty include warnings can make showing your own warnings
   easier.
-permalink: turning-off-thirdparty-include-warnings
 categories:
   - Tech
 tags:

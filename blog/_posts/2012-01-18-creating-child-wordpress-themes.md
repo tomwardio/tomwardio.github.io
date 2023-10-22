@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Creating Child Wordpress Themes
-permalink: creating-child-wordpress-themes
 categories:
   - Tech
 tags:

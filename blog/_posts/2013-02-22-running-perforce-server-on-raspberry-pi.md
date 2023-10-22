@@ -2,7 +2,6 @@
 layout: post
 title: Running Perforce server on Raspberry Pi
 subtitle: Tutorial for getting perforce running on Rasbian.
-permalink: running-perforce-server-on-raspberry-pi
 header-img: uploads/posts/running-perforce-server-on-raspberry-pi/background.jpg
 categories:
   - Tech

@@ -2,7 +2,7 @@
 layout: post
 title: Class Layout Reporting with VC++ Compiler
 subtitle: Tutorial to show class layout on Windows using VC++.
-permalink: class-layout-reporting-with-vc-compiler
+permalink: /blog/class-layout-reporting-with-vc-compiler
 categories:
   - Tech
 tags:

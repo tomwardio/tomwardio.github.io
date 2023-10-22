@@ -2,7 +2,6 @@
 layout: post
 title: Triple-boot Macbook Pro
 subtitle: Installing OSX, Windows 7 and Redhat.
-permalink: triple-boot-macbook-pro
 categories:
   - Tech
 tags:

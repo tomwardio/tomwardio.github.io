@@ -1,7 +1,7 @@
 title: "my blog"
 author: "Tom Ward"
 description: "A blog about nothing"
-permalink: /:title/
+permalink: /blog/:title/
 lang: "en"
 excerpt_separator: <!--more-->
 date_format: "%B %d, %Y"

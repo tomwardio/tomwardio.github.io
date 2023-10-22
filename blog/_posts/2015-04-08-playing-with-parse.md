@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Playing with Parse
-permalink: playing-with-parse
 categories:
   - Tech
 tags:

@@ -2,7 +2,7 @@
 layout: post
 title: SIMD optimized dot and cross product functions
 subtitle: C++ examples of vector intrinsics.
-permalink: simd-optimized-dot-and-cross
+permalink: /blog/simd-optimized-dot-and-cross
 categories:
   - Tech
 tags:

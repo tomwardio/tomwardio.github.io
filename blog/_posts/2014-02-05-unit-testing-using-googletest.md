@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Unit Testing using googletest
-permalink: unit-testing-using-googletest
 categories:
   - Tech
 tags:

@@ -2,7 +2,6 @@
 layout: post
 title: Un-premultiplied textures on Metal
 subtite: Why doesn't iOS support un-premultiplied textures?!
-permalink: un-premultiplied-textures-on-metal
 categories:
   - Tech
 tags:

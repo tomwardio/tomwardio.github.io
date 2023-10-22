@@ -1,7 +1,6 @@
 ---
 layout: post
 title: My First Post
-permalink: my_first_post
 categories:
   - Uncategorized
 tags: []

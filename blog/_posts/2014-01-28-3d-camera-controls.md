@@ -2,7 +2,6 @@
 layout: post
 title: 3D Camera Controls
 subtitle: Examples of doing camera controls in C++.
-permalink: 3d-camera-controls
 categories:
   - Tech
   - 3D

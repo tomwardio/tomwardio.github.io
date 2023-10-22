@@ -2,7 +2,6 @@
 layout: post
 title: API Hooking on Windows
 subtitle: Modifying system calls on Windows...
-permalink: api-hooking-on-windows
 categories:
   - Tech
 tags:

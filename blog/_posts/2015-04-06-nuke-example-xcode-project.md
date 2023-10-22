@@ -2,7 +2,6 @@
 layout: post
 title: Nuke Example XCode Project
 subtitle: Example Nuke project on a modern version of OSX.
-permalink: nuke-example-xcode-project
 categories:
   - Tech
 tags:
