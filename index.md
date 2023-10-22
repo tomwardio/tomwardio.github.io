@@ -1,7 +1,5 @@
 ---
-layout: page
-title: About
-permalink: /about/
+layout: index
 ---
 
 Having graduated with a 1st in Computer Science from Nottingham University, I
