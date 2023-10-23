@@ -1,10 +1,12 @@
-title: "my blog"
+title: "Tom Ward"
 author: "Tom Ward"
 description: "A blog about nothing"
 permalink: /blog/:title/
 lang: "en"
 excerpt_separator: <!--more-->
 date_format: "%B %d, %Y"
+paginate: 5
+paginate_path: "/blog/page:num"
 
 # Layout
 show_excerpts: true        # show article excerpts on the home page
@@ -15,7 +17,6 @@ minimal: false             # use a dark header
 # Menu
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "index.html"}
-  - {title: Blog, url: "blog"}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
   - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
@@ -28,3 +29,4 @@ comments:
 
 plugins:
  - jekyll-feed
+ - jekyll-paginate
