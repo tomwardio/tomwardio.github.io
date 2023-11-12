@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Unmangle C++ symbols
-permalink: /blog/unmangle-cpp-symbols
 categories:
   - Tech
 tags:

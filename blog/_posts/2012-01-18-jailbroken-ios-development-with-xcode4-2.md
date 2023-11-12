@@ -2,7 +2,7 @@
 layout: post
 title: Jailbroken iOS development with XCode4.2 and iOS5
 subtitle: Guide to show how to jailbreak iOS device for development.
-permalink: /blog/jailbroken-ios-development-with-xcode4-2
+permalink: /blog/jailbroken-ios-development-with-xcode4-2/
 categories:
   - Tech
 tags:

@@ -2,7 +2,7 @@
 layout: post
 title: Detect Symlink using Python 2.x on Windows
 subtitle: Fix for detecting symlinks on Python for Windows.
-permalink: /blog/detect-symlink-using-python-2-x-on-windows
+permalink: /blog/detect-symlink-using-python-2-x-on-windows/
 categories:
   - Tech
 tags:
