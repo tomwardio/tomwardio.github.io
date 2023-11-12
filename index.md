@@ -2,16 +2,17 @@
 layout: index
 ---
 
-Having graduated with a 1st in Computer Science from Nottingham University, I
-spent the first 5 years of my working life in the Games Industry for
-[Electronic Arts](http://www.ea.com) followed by
-[Criterion Games](http://www.criteriongames.com), before moving into the VFX
-industry at [The Foundry](http://www.thefoundry.co.uk). After 4 years learning
-how to make films, I now work at [DeepMind](http://www.deepmind.com) working to
-'Solve Intelligence'.
+![image](/uploads/profile.png){: style="float:left; margin: 15px 15px;"}
 
-This website is really just somewhere for me to collate all those little
-projects I’ve worked on over the years outside of work, which hopefully some
-might find useful, or even a little interesting! If you want to get in contact,
-the best way is to send an email to
-[contactme@tomjbward.co.uk](mailto:contactme@tomjbward.co.uk)
+# Hello there!
+
+I'm Tom, a Software Engineer from London, UK. Over the years I've had the
+privilege to work in various exciting domains, from cutting edge
+[games](http://www.criteriongames.com) to the captivating world of
+[VFX](http://www.foundry.com). Currently I'm at
+[DeepMind](http://www.deepmind.com) doing AI research to "Solve Intelligence".
+
+This site is my quiet corner of the web to collate those projects I've worked on
+over the years, which others might find useful, or even a little interesting!
+
+Please feel free to [reach out](contact/) if you'd like to get in contact.
