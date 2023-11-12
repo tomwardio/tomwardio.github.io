@@ -1,6 +1,6 @@
 ---
 layout: index
-title: "Contact"
+title: Contact
 ---
 
 # Contact Me

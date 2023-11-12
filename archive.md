@@ -1,5 +1,5 @@
 ---
-title: "Archive"
+title: Archive
 layout: default
 sitemap: false
 ---

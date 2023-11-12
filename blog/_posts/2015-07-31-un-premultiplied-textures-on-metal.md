@@ -41,7 +41,7 @@ For this example, I've created my own 8-bit PNG that has the following:
 [![RGB](/uploads/posts/un-premultiplied-textures-on-metal/texture-small.png)](/uploads/posts/un-premultiplied-textures-on-metal/texture.png)
 |
 [![Alpha](/uploads/posts/un-premultiplied-textures-on-metal/alpha-small.png)](/uploads/posts/un-premultiplied-textures-on-metal/alpha.png)
-------------- | -------------
+\------------- | -------------
 
 To load a UIImage into a Metal texture, the only way to currently do this is to
 use the CGImage API to get access to the raw pixel data. I wrote a helper

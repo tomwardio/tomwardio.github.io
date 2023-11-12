@@ -38,9 +38,8 @@ on it.
 
 <!--more-->
 
-Once you've Wheezy installed and running,
-you'll need to get a couple of packages installed. SSH onto the device and run
-the following command:
+Once you've Wheezy installed and running, you'll need to get a couple of
+packages installed. SSH onto the device and run the following command:
 
 ```bash
 sudo apt-get install g++ gcc make bison flex

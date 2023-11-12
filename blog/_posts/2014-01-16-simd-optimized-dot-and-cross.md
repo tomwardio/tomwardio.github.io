@@ -35,8 +35,7 @@ desktop processor\* as well as hopefully port quite nicely to
 (more on that in a future post!)
 
 Rather than go through everything, I'll instead just explain what I did for dot
-and cross products, which will show most of the simple ways of doing
-things.
+and cross products, which will show most of the simple ways of doing things.
 
 <!--more-->
 
