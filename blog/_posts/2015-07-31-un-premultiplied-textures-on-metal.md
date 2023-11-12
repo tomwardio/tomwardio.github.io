@@ -12,7 +12,7 @@ tags:
   - Apple
 ---
 
-Recently in my spare time I've been dabbling on Apple's not-so-new OpenGL
+Recently in my spare time I've been dabbling with Apple's not-so-new OpenGL
 replacement, Metal, which has frankly been an absolute joy. It's a very neat and
 tidy API, a lot simpler to understand than the monstrosity that is OpenGL and
 gives a lot more fine-grained control over command dispatch, sharing buffers and
@@ -29,8 +29,6 @@ when you load a PNG image on iOS, by default it seems to automatically
 pre-multiply the image by the alpha channel. This means that when you load the
 UIImage, iOS automatically multiplies the R, G and B by the pixel's alpha
 amount, which means you lose the color values for anywhere there's a zero alpha.
-I might be doing something wrong, so I've uploaded an example iOS project that
-should show the issue [here](https://github.com/tomwardio/MetalPremultTexture).
 
 <!--more-->
 
@@ -39,9 +37,7 @@ should show the issue [here](https://github.com/tomwardio/MetalPremultTexture).
 For this example, I've created my own 8-bit PNG that has the following:
 
 [![RGB](/uploads/posts/un-premultiplied-textures-on-metal/texture-small.png)](/uploads/posts/un-premultiplied-textures-on-metal/texture.png)
-|
 [![Alpha](/uploads/posts/un-premultiplied-textures-on-metal/alpha-small.png)](/uploads/posts/un-premultiplied-textures-on-metal/alpha.png)
-\------------- | -------------
 
 To load a UIImage into a Metal texture, the only way to currently do this is to
 use the CGImage API to get access to the raw pixel data. I wrote a helper
@@ -101,7 +97,7 @@ following when rendering it in Metal:
 As you can see, the image has been pre-multiplied with the alpha, which is kinda
 to be expected, because we used the image's CGAlphaInfo to determine how to read
 the pixel into memory. In the header, there's a promising option called
-_"kCGImageAlphaLast"_, which looks to be exactly what we want! However, using
+`kCGImageAlphaLast`, which looks to be exactly what we want! However, using
 this causes the image to fail to load with the following error:
 
 > "CGBitmapContextCreate: unsupported parameter combination: 8 integer
@@ -136,6 +132,3 @@ doesn't support this relatively small feature when loading images. I hope they
 add support for this in a future release (maybe iOS 9, given their new MetalView
 support) but as there's ways to work around it, I imagine it's low on their
 radar.
-
-I've uploaded a sample project to my github account
-[here](https://github.com/tomwardio/MetalPremultTexture)
