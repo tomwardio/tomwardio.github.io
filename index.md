@@ -2,7 +2,7 @@
 layout: index
 ---
 
-![image](/uploads/profile.png)
+![image](/assets/images/profile.png)
 
 # Hello there!
 
