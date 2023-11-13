@@ -2,7 +2,7 @@
 layout: index
 ---
 
-![image](/uploads/profile.png){: style="float:left; margin: 15px 15px;"}
+![image](/uploads/profile.png)
 
 # Hello there!
 
