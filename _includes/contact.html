@@ -1,12 +1,18 @@
-<script type="text/javascript">var submitted = false;</script>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
-  onload="if(submitted) {window.location='thanks';}"></iframe>
-<form action="https://docs.google.com/forms/d/e/1FAIpQLSdOhtVy9pKbRAUfagylQzISbqB73RixX3ICsMkn-n4AwQNbnw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
-  <label>Name</label><br>
-  <input type="text" placeholder="Name" name="entry.773680250" required><br>
-  <label>Email Address</label><br>
-  <input type="email" placeholder="Email address" name="entry.1394292301" required><br>
-  <label>Message</label><br>
-  <textarea rows="5" placeholder="Message" name="entry.2004643817" required></textarea><br>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<form id="contact_form" action="https://europe-north1-tomward-devsite.cloudfunctions.net/contact_form_function" method="POST">
+  <label>Name</label>
+  <br/>
+  <input type="text" placeholder="Name" name="entry.773680250" required>
+  <br/>
+  <label>Email Address</label>
+  <br/>
+  <input type="email" placeholder="Email address" name="entry.1394292301" required>
+  <br/>
+  <label>Message</label>
+  <br/>
+  <textarea rows="5" placeholder="Message" name="entry.2004643817" required></textarea>
+  <br/>
+  <div class="g-recaptcha" data-sitekey="6LdV76MqAAAAAElbW0a0CMrTksuHNfbC_NXnk7DH" data-theme="dark"></div>
+  <br/>
   <button type="submit">Send</button>
 </form>
